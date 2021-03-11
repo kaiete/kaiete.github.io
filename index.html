@@ -15,12 +15,19 @@
       }
     </style>
     <script>
-      function validateToken() {
+      function encodeComponent() {
         let code = document.getElementById("code").value
-        let token = encodeURIComponent(code)
-        document.getElementById("token").value = token
+        let encoded = encodeURIComponent(code)
+        document.getElementById("token").value = encoded
         delete code
-        delete token
+        delete encoded
+      }
+      function decodeComponent() {
+        let code = document.getElementById("encoded").value
+        let decoded = decodeURIComponent(code)
+        document.getElementById("decoded").value = decoded
+        delete code
+        delete decoded
       }
     </script>
   </head>
@@ -29,7 +36,11 @@
     <a href="mailto:kaiete@aragon-press.com">contact me</a>
     <hr>
     <p>Mysteriously pointless URI encoder</p>
-    <input oninput="validateToken()" type="text" placeholder="Some text..." id="code">
+    <input oninput="encodeComponent()" type="text" placeholder="Some text..." id="code">
     <input disabled id="token" placeholder="Encoded text">
+    <hr>
+    <p>URI decoder</p>
+    <input oninput="decodeComponent()" type="text" placeholder="Some encoded text..." id="encoded">
+    <input disabled id="decoded" placeholder="Decoded text">
   </body>
 </html>
