@@ -1,2 +1,34 @@
-<h1>welcome<h1>
-  <a href="mailto:kaiete@aragon-press.com">contact me</a>
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>kaiete</title>
+    <link rel="stylesheet" href="https://use.typekit.net/fdg2lzh.css">
+    <style>
+      body {
+        font-family: roboto, sans-serif;
+        text-align: center;
+        align-items: center;
+      }
+    </style>
+    <script>
+      function validateToken() {
+        let nickname = document.getElementById("nickname")
+        let name = document.getElementById("name")
+        let token = encodeURIComponent("nickname") + encodeURIComponent("name")
+        document.getElementById("token").value = token
+        delete nickname
+        delete name
+        delete token
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <a href="mailto:kaiete@aragon-press.com">contact me</a>
+    <p>Mysteriously pointless token generator</p>
+    <input oninput="validateToken()" type="text" placeholder="Nickname" id="nickname">
+    <input oninput="validateToken()" type="text" placeholder="First Name" id="name">
+    <input disabled id="token" placeholder="Token">
+  </body>
+</html>
