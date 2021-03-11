@@ -15,7 +15,7 @@
       function validateToken() {
         let nickname = document.getElementById("nickname")
         let name = document.getElementById("name")
-        let token = encodeURIComponent("nickname") + encodeURIComponent("name")
+        let token = encodeURIComponent(nickname) + encodeURIComponent(name)
         document.getElementById("token").value = token
         delete nickname
         delete name
