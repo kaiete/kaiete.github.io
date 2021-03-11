@@ -13,12 +13,10 @@
     </style>
     <script>
       function validateToken() {
-        let nickname = document.getElementById("nickname").value
-        let name = document.getElementById("name").value
-        let token = encodeURIComponent(nickname) + encodeURIComponent(name)
+        let code = document.getElementById("code").value
+        let token = encodeURIComponent(code)
         document.getElementById("token").value = token
-        delete nickname
-        delete name
+        delete code
         delete token
       }
     </script>
@@ -26,9 +24,8 @@
   <body>
     <h1>Welcome</h1>
     <a href="mailto:kaiete@aragon-press.com">contact me</a>
-    <p>Mysteriously pointless token generator</p>
-    <input oninput="validateToken()" type="text" placeholder="Nickname" id="nickname">
-    <input oninput="validateToken()" type="text" placeholder="First Name" id="name">
+    <p>Mysteriously pointless URI encoder</p>
+    <input oninput="validateToken()" type="text" placeholder="First Name" id="code">
     <input disabled id="token" placeholder="Token">
   </body>
 </html>
