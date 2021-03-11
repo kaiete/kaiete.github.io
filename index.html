@@ -13,8 +13,8 @@
     </style>
     <script>
       function validateToken() {
-        let nickname = document.getElementById("nickname")
-        let name = document.getElementById("name")
+        let nickname = document.getElementById("nickname").value
+        let name = document.getElementById("name").value
         let token = encodeURIComponent(nickname) + encodeURIComponent(name)
         document.getElementById("token").value = token
         delete nickname
