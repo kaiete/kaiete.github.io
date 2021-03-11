@@ -1,0 +1,14 @@
+body {
+  font-family: roboto, sans-serif;
+  text-align: center;
+  align-items: center;
+}
+hr {
+  width: 30%;
+}
+.mainhr {
+  width: 40%;
+}
+.smallhr {
+  width: 20%
+}

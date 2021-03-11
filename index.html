@@ -4,19 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>kaiete</title>
     <link rel="stylesheet" href="https://use.typekit.net/fdg2lzh.css">
-    <style>
-      body {
-        font-family: roboto, sans-serif;
-        text-align: center;
-        align-items: center;
-      }
-      hr {
-        width: 30%;
-      }
-      .mainhr {
-        width: 40%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css"/>
     <script>
       function encodeComponent() {
         let code = document.getElementById("code").value
@@ -45,5 +33,9 @@
     <p>URI decoder</p>
     <input oninput="decodeComponent()" type="text" placeholder="Some encoded text..." id="encoded">
     <input disabled id="decoded" placeholder="Decoded text">
+    <hr>
+    <a href="/phrases" title="Useful phrases in different languages.">Phrasebook</a>
+    <br>
+    <span><p><img src="arrow-right-to-up.png" width="100" height="70">I'm in beta</p></span>
   </body>
 </html>
