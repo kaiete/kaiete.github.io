@@ -10,7 +10,7 @@
         let code = document.getElementById("code").value
         document.getElementById("renderer").innerHTML = code
       }
-      const params = decodeURIComponent(new URLSearchParams(location.search))
+      var params = decodeURIComponent(new URLSearchParams(location.search))
       if (params != "" || params != "=") {
         params = params.toString().replace("code=","")
         document.getElementById("code").value = params
