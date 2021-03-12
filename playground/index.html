@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.typekit.net/fdg2lzh.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>kaiete | code playground</title>
+    <script>
+      function rendercode() {
+        let code = document.getElementById("code").innerHTML
+        document.getElementById("renderer").innerHTML = code
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <textarea placeholder="Code away! No JS, because it would run automatically." class="code" oninput="rendercode()" id="code"></textarea>
+    </div>
+    <div id="renderer">
+    </div>
+    <style>
+      .code {
+        float: left;
+        height: 100%;
+        width: 50%;
+      }
+      body {
+        font-family: roboto, sans-serif;
+      }
+      #renderer {
+        height: 100%;
+        float: right;
+        width: 50%;
+      }
+    </style>
+  </body>
+</html>
