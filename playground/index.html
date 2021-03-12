@@ -10,11 +10,6 @@
         let code = document.getElementById("code").value
         document.getElementById("renderer").innerHTML = code
       }
-      var params = decodeURIComponent(new URLSearchParams(location.search))
-      if (params != "" || params != "=") {
-        params = params.toString().replace("code=","")
-        document.getElementById("code").value = params
-      }
     </script>
   </head>
   <body>
@@ -35,5 +30,12 @@
         width: 100%;
       }
     </style>
+    <script>
+            var params = decodeURIComponent(new URLSearchParams(location.search))
+      if (params != "" || params != "=") {
+        params = params.toString().replace("code=","")
+        document.getElementById("code").value = params
+      }
+    </script>
   </body>
 </html>
