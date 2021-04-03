@@ -12,3 +12,33 @@ hr {
 .smallhr {
   width: 20%
 }
+button {
+  outline: dashed 1px black;
+  border: none;
+  width: auto;
+}
+.input {
+  border: none;
+  outline: none;
+  background-color: white;
+  color: gray;
+  transition: all .35s ease-in-out;
+  width: 1.5in;
+}
+.input:hover {
+  color: gray;
+  background-color: lightgray;
+  width: 2.5in;
+  border-radius: 7px;
+}
+::placeholder, .input:hover, input:hover {
+  color: black;
+}
+input {
+  outline: none;
+  border: none;
+  background-color: white;
+  width: 1in;
+  transition: color .40 ease-in-out;
+  cursor: default;
+}
