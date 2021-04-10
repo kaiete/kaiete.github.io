@@ -1,6 +1,5 @@
 body {
-  font-family: roboto, sans-serif;
-  font-weight: 500;
+  font-family: noto-sans, fira-sans, roboto, lato, sans-serif;
   text-align: center;
   align-items: center;
 }
