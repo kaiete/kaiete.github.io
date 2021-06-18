@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>I'm confused</title>
+    <style>
+      body {
+        font-family: ubuntu, sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      I'm Confused
+    </h1>
+    <br>
+    <span>
+      <input placeholder="How confused?" value="" type="number" id="howConfused">
+      <button onclick="confused()">I'm confused</button>
+    </span>
+    <div id="confused"></div>
+    <script>
+      function confused() {
+        let x = document.getElementById("howConfused").value
+        for (;;x > 0) {
+          document.getElementById("confused").innerHTML = document.getElementById("confused").innerHTML + "<div><b>Person 1</b>: hi<br><b>Person 2</b>: I'm confused could you say that again please<br></div>"
+          x = x - 1
+        }
+      }
+    </script>
+  </body>
+</html>
