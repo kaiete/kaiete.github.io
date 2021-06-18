@@ -22,7 +22,7 @@
     <div id="confused"></div>
     <script>
       function confused() {
-        let x = document.getElementById("howConfused").value
+        var x = document.getElementById("howConfused").value
         for (;;x > 0) {
           document.getElementById("confused").innerHTML = document.getElementById("confused").innerHTML + "<div><b>Person 1</b>: hi<br><b>Person 2</b>: I'm confused could you say that again please<br></div>"
           x = x - 1
