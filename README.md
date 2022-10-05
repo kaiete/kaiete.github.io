@@ -1,3 +1,4 @@
-
-  <h1 align="center">HI</h1>
-<p align="center">my name is kaiete (that is not my real name) and I do STUFF like coding and reading.<br>I enjoy JavaScript and HTML and sometimes I use CSS, and I think my favourite repos are Laboratory and Project StoryTime.<br>If you decide to set Paving as your homepage, don't use it on mobile / tablets (it looks ugly)<br><span align="center" style="text-align: center; align-items: center; width: 100%;"><a align="center" href="http://storytime.k.vu"><img align="center" src="http://projectstorytime.vercel.app/favicon.ico/"> StoryTime</a>⬅ ➡<a href="http://kaiete.github.io/paving" align="center">քąѵìղց <img align="center" src="https://raw.githubusercontent.com/kaiete/projectstorytime/main/storytime-edited.ico" width="25" height="23"></a></span></p>
+# Welcome!
+Hi! I go by the name kaiete and I code all sorts of things. I like html, javascript and books.
+I hope you have a nice day, and here are some of my favourite personal projects.  
+[paving, my homepage](https://kaiete.uk/paving) - [palgrave, a virtual assistant made by me and @sirpengi](https://github.com/kaiete/InstantPalgrave)
