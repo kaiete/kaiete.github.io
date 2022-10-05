@@ -1,3 +1,4 @@
 theme: cayman
 title: kaiete.uk
-include: README.md
+include:
+  - README.md
