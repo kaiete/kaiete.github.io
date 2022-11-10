@@ -11,6 +11,15 @@
     </style>
   </head>
   <body>
+    <script>
+      function confused() {
+        var x = document.getElementById("howConfused").value
+        for (;x > 0;) {
+          document.getElementById("confused").innerHTML = document.getElementById("confused").innerHTML + "Gremlin.<br>"
+          x = x - 1
+        }
+      }
+    </script>
     <h1>
       I'm Confused
     </h1>
@@ -20,14 +29,5 @@
       <button onclick="confused()">I'm confused</button>
     </span>
     <div id="confused"></div>
-    <script>
-      function confused() {
-        var x = document.getElementById("howConfused").value
-        for (;x > 0) {
-          document.getElementById("confused").innerHTML = document.getElementById("confused").innerHTML + "Gremlin.<br>"
-          x = x - 1
-        }
-      }
-    </script>
   </body>
 </html>
